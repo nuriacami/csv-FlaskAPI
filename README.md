@@ -8,18 +8,25 @@ where venvname is the name of your virtual environment.
 
 3. **Create the Input CSV file example:** open a note pad and paste the following data:
 > Song,Date,Number of Plays
+> 
 > Umbrella,2020-01-02,200
+> 
 > Umbrella,2020-01-01,100
+> 
 > In The End,2020-01-01,500
+> 
 > Umbrella,2020-01-01,50
+> 
 > In The End,2020-01-01,1000
+> 
 > Umbrella,2020-01-02,50
+> 
 > In The End,2020-01-02,500
 
 then save it to your PC in CSV format.
 
 4. **Run the python program:** in our case, our program is on api.py.
- > `flask --app api run`
+ `flask --app api run`
 
 5. **Go to the IP adress 127.0.0.1:5000** (assuming that you use the default Flask settings).
 
@@ -29,6 +36,8 @@ your computer and finally click on the Upload button.
 7. **Copy the ID of the task.**
 
 8. **Go to http://127.0.0.1:5000/result?id=IDTASK**, where IDTASK is the ID obtained in the previous step. If the processing has been finished, the Output CSV file will be downloaded.
+
+---------------------------
 
 ### Notes on the CSV processing module:
 The module starts by sorting the Input CSV file by two columns: song and date. In this way,
@@ -42,9 +51,11 @@ The computational complexity of this processing can be of the order of O(*n* log
 is the number of rows of the Input CSV file, O(*n* log *n*) is the complexity of sorting a dataset
 and O(*n*) corresponds to the complexity of iterating over all the rows.
 
-*As our particular input example has only 7 observations, we set the chunk size to 3. However,
+* *As our particular input example has only 7 observations, we set the chunk size to 3. However,
 for large files it would be appropriate to consider a more suitable chunksize value. This can be
 easily set on the CSV processing module itself*.
+
+---------------------------
 
 ### Notes on the API and Asynchronous Task Processing:
 - The API has been created with the framework Flask. In addition, an HTML form has been
