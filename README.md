@@ -16,9 +16,9 @@ where venvname is the name of your virtual environment.
 6. **Upload the Input CSV file:** click on Select File button, then select the Input CSV file from
 your computer and finally click on the Upload button.
 
-7. **Copy the ID of the task.**
+7. **Copy the ID of the task (IDTASK).**
 
-8. **Go to http://127.0.0.1:5000/result?id=IDTASK**, where IDTASK is the ID obtained in the previous step. If the processing has been finished, the Output CSV file will be downloaded.
+8. **Go to http://127.0.0.1:5000/result?id=IDTASK**. If the processing has been finished, the Output CSV file will be downloaded.
 
 ---------------------------
 
