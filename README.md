@@ -4,12 +4,11 @@
 where venvname is the name of your virtual environment.
 
 2. **Install the requirements needed:**
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`.
 
 3. **Create an empty folder named 'data'** in this same directory.
 
-4. **Run the python program:** in our case, our program is on api.py.
- `flask --app api run`
+4. **Run the python program:** in our case, our program is on api.py, so `flask --app api run`.
 
 5. **Go to the IP adress 127.0.0.1:5000** (assuming that you use the default Flask settings).
 
