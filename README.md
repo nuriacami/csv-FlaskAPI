@@ -35,7 +35,7 @@ and O(*n*) corresponds to the complexity of iterating over all the rows.
 
 * *As our particular input example has only 7 observations, we set the chunk size to 3. However,
 for large files it would be appropriate to consider a more suitable chunksize value. This can be
-easily set on the CSV processing module itself*.
+easily set on the CSV processing module itself.
 
 ---------------------------
 
