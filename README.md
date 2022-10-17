@@ -6,24 +6,7 @@ where venvname is the name of your virtual environment.
 2. **Install the requirements needed:**
 `pip install -r requirements.txt`
 
-3. **Create the Input CSV file example:** open a note pad and paste the following data:
-> Song,Date,Number of Plays
-> 
-> Umbrella,2020-01-02,200
-> 
-> Umbrella,2020-01-01,100
-> 
-> In The End,2020-01-01,500
-> 
-> Umbrella,2020-01-01,50
-> 
-> In The End,2020-01-01,1000
-> 
-> Umbrella,2020-01-02,50
-> 
-> In The End,2020-01-02,500
-
-then save it to your PC in CSV format.
+3. **Create an empty folder named 'data'** in this same directory.
 
 4. **Run the python program:** in our case, our program is on api.py.
  `flask --app api run`
